@@ -1,6 +1,7 @@
 const express = require ('express');
 const path = require ('path');
 const app = express();
+const port = process.env.PORT || 3033;
 
 
 app.use(express.static(path.resolve(__dirname, './public')));
@@ -19,7 +20,9 @@ app.post('/registro', (req, res)=>{
 
 
 
-app.listen (3001, () => {
-    console.log('Servidor corrindo en el puerto 3001');
-});
+// app.listen (3001, () => {
+//     console.log('Servidor corrindo en el puerto 3001');
+// });
 
+
+app.listen(port, () =>{console.log("Servidor corriendo en http://localhost:" + port)});
