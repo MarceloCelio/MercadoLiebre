@@ -1,0 +1,292 @@
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    
+}
+
+header {
+    background-color: #EAC926;
+    font-size: 12px;
+}
+body{
+    background-color: rgb(233, 226, 226);
+}
+h3{
+    font-size: 24px;
+}
+
+p{
+    font-size: 12px;
+}
+div.big-header{
+    padding: 5%;
+}
+.big-header {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.input{
+    display: flex;
+    width: 80%;
+    border-radius: 5px;
+}
+.submit{
+    border: none;
+}
+
+
+
+.logo-ml {
+    width: 50%;
+    padding: 10px;
+}
+.form {
+    display: flex;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+    padding: 2px;
+    font-size: 11px;
+}
+header div .big-header p{
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+}
+header .form .input{
+    background-color: #FFF;
+    border: 1px solid #000;
+    outline: none;
+    color: #666;
+    padding: 2px;
+}
+header .form .submit{
+    background-color: #FFF;
+    border: 1px solid #000;
+    color: #666;
+    width: 10%;
+}
+
+nav {
+    display: none;
+}
+ul li a {
+    text-decoration: none;
+    list-style-type: none;
+    color: black;
+}
+
+.burger-menu{
+    text-align: center;
+}
+.burger-menu i{
+    background-color: #0044aa;
+    border-radius: 5px;
+    font-size: 20px;
+    height: 40px;
+    width: 40px;
+    padding: 10px;
+    margin: 10px 0px 20px 0px;
+    color: white;
+}
+
+.banner img{
+    width: 100%;
+}
+
+
+
+
+-----------------------------------------------------------------------------
+article div.main-article{
+    width: 100%;
+    border-top: 1px solid #ebebeb;
+    padding: 15px;
+}
+
+.price{
+    font-size: 18px;
+}
+
+.discount,
+.description{
+    font-size: 16px;
+    font-weight: normal;
+}
+
+h3,
+.description{
+    color: #666;
+}
+
+.description {
+    display: none;
+    margin-top: 20px;
+  }
+
+section.banner img{
+    width: 100%;
+}
+
+main{
+    width: 90%;
+    margin: 0 auto;
+}
+
+main section h3{
+    margin: 20px 0px;
+    color: #666;
+}
+
+main section article{
+    background-color: #fff;
+    margin-bottom: 10px;
+}
+
+main section article img{
+    width: 100%;
+}
+
+main section article i,
+.discount{
+    color: #39b54a;
+}
+
+main section article i{
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+}
+
+article div.main-article {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    border-top: 1px solid #ebebeb;
+    position: relative;
+    padding: 15px;
+  }
+
+.products{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.products article{
+    width: 100%;
+}
+
+
+
+.footer{
+    text-align: center;
+    background-color: white;
+}
+
+footer section div{
+    margin: 40px;
+}
+
+footer section .derechos p{
+    text-align: left;
+}
+
+footer section div i{
+    color: #0044aa;
+    font-size: 30px;
+}
+
+.derechos{
+    margin-top: 0;
+    background-color: #fff;
+}
+
+
+
+
+
+
+
+
+@media (min-width: 420px){
+    .description{
+        display: block;
+    }
+    header nav{
+        display: block;
+    }
+    .burger-menu{
+        display: none;
+    }
+    .products article{
+        width: 48%;
+    }
+    .top-header .logo{
+        width: 30%;
+    }
+    
+    .top-header .form{
+        width: 30%;
+    }
+    .top-header .center{
+        align-self: center;
+        width: 30%;
+    }
+    header nav{
+        display: flex;
+    }
+    nav .principal{
+        width: 35%;
+        display: flex;
+        justify-content: space-around;
+        align-items: self-end;
+        margin-right: 20%;
+    }
+    nav .secundario{
+        justify-content: space-around;
+        display: flex;
+        width: 30%;
+    }
+}
+
+@media (min-width: 1024px){
+    .products article{
+        width: 23%;
+    }
+    .footer{
+        display: flex;
+        
+    }
+}
+
+@media (hover :hover){
+   
+    .products article:hover .fa-truck{
+        transform: rotate(-90deg);
+        transition: transform 0.5s ease; 
+    }
+    .products article:hover{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+    .form_login button:hover {
+        background-color: #0022AA;
+        color: #FFF;
+    }
+    .footer_tarjetas:hover i{
+        color:#EAC926;
+    }
+}
